@@ -1,0 +1,11 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+format = " ❯ "
+# Replace the '❯' symbol in the prompt with '➜'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
