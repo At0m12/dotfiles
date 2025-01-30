@@ -23,14 +23,14 @@ exec waybar
 
 # Border
 default_border pixel 2
-hide_edge_borders smart
-client.focused "#d99565" "#d99565" "#ffffff"
+client.focused #ebdbb2 #ebdbb2 #ebdbb2 #ebdbb2
+client.unfocused #928374 #928374 #ffffff
 
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/.config/wallpapers/gruvbox.jpg fill
+output * bg ~/.config/wallpapers/gnu.jpg fill
 #
 # Example configuration:
 #
@@ -214,6 +214,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
     # Special key to take a screenshot with grim
-    bindsym Print exec grim
+    bindsym $mod+z exec grim ~/Screenshots/$(date +'%s_grim.png')
+    bindsym $mod+Ctrl+z exec grim -g "$(slurp)" ~/Screenshots/$(date +'%s_grim.png')
 
 include /etc/sway/config.d/*

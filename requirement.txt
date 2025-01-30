@@ -1,0 +1,14 @@
+sway
+stow
+nerd-fonts
+neovim
+swaybg
+waybar
+foot
+zsh
+starship
+
+zoxide
+tmux
+
+chsh -s $(which zsh)

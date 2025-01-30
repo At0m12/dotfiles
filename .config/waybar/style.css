@@ -9,7 +9,7 @@
 
 window#waybar {
     background: transparent;
-    color: white;
+    color: transparent;
 }
 
 #window {
@@ -36,7 +36,7 @@ window#waybar {
 
 #mode {
     background: #64727D;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid transparent;
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #custom-spotify, #tray, #mode {
@@ -60,15 +60,15 @@ window#waybar {
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: black;
+        background-color: transparent;
+        color: #ebdbb1;
     }
 }
 
 #battery.warning:not(.charging) {
-    color: white;
+    color: #fb4934;
     animation-name: blink;
-    animation-duration: 0.5s;
+    animation-duration: 1.0s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
